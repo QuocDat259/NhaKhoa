@@ -106,3 +106,9 @@ D:\DACN\NhaKhoa\bin\roslyn\vbc.exe.config
 D:\DACN\NhaKhoa\bin\roslyn\vbc.rsp
 D:\DACN\NhaKhoa\bin\roslyn\VBCSCompiler.exe
 D:\DACN\NhaKhoa\bin\roslyn\VBCSCompiler.exe.config
+D:\DACN\NhaKhoa\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\DACN\NhaKhoa\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\DACN\NhaKhoa\bin\Microsoft.AspNet.SignalR.Core.pdb
+D:\DACN\NhaKhoa\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\DACN\NhaKhoa\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+D:\DACN\NhaKhoa\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
