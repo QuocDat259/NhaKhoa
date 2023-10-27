@@ -1818,11 +1818,29 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .best-deal .info-table ul li span {
-    float: none;
-    width: 100%;
-  }
-  .contact-page .section-heading {
-    margin-right: 100px;
-  }
-}
+    .best-deal .info-table ul li span {
+        float: none;
+        width: 100%;
+    }
+
+    .contact-page .section-heading {
+        margin-right: 100px;
+    }
+
+    .divider:after,
+    .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+    }
+
+    .h-custom {
+        height: calc(100% - 73px);
+    }
+
+    @media (max-width: 450px) {
+        .h-custom {
+            height: 100%;
+        }
+    }
