@@ -28,5 +28,7 @@ namespace NhaKhoa.Models
         public int? Id_Phong { get; set; }
 
         public virtual AspNetUser AspNetUser { get; set; }
+
+        public virtual PhieuDatLich PhieuDatLich { get; set; }
     }
 }

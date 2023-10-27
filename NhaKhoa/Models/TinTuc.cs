@@ -30,6 +30,8 @@ namespace NhaKhoa.Models
 
         public int? Id_danhgia { get; set; }
 
+        public virtual AspNetUser AspNetUser { get; set; }
+
         public virtual DanhGia DanhGia { get; set; }
     }
 }

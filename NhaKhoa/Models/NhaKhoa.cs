@@ -50,11 +50,6 @@ namespace NhaKhoa.Models
                 .HasForeignKey(e => e.UserId);
 
             modelBuilder.Entity<AspNetUser>()
-                .HasMany(e => e.DanhGias)
-                .WithOptional(e => e.AspNetUser)
-                .HasForeignKey(e => e.Id_Benhnhan);
-
-            modelBuilder.Entity<AspNetUser>()
                 .HasMany(e => e.DonThuocs)
                 .WithOptional(e => e.AspNetUser)
                 .HasForeignKey(e => e.Id_bacsi);
@@ -75,14 +70,36 @@ namespace NhaKhoa.Models
                 .HasForeignKey(e => e.IdBenhNhan);
 
             modelBuilder.Entity<AspNetUser>()
+                .HasMany(e => e.TinTucs)
+                .WithOptional(e => e.AspNetUser)
+                .HasForeignKey(e => e.Id_admin);
+
+            modelBuilder.Entity<AspNetUser>()
                 .HasMany(e => e.ThoiKhoaBieux)
                 .WithOptional(e => e.AspNetUser)
                 .HasForeignKey(e => e.Id_Nhasi);
+
+            modelBuilder.Entity<DichVu>()
+                .HasMany(e => e.VatTuSuDungs)
+                .WithRequired(e => e.DichVu)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<DonThuoc>()
                 .HasMany(e => e.Thuocs)
                 .WithMany(e => e.DonThuocs)
                 .Map(m => m.ToTable("ChiTietThuoc").MapLeftKey("Id_donthuoc").MapRightKey("Id_thuoc"));
+
+            modelBuilder.Entity<HoaDon>()
+                .HasMany(e => e.VatTuSuDungs)
+                .WithRequired(e => e.HoaDon)
+                .HasForeignKey(e => e.Id_dichvu)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<HoaDon>()
+                .HasMany(e => e.VatTuSuDungs1)
+                .WithRequired(e => e.HoaDon1)
+                .HasForeignKey(e => e.Id_Vattu)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<PhieuDatLich>()
                 .HasMany(e => e.PhiKhams)
@@ -92,6 +109,11 @@ namespace NhaKhoa.Models
             modelBuilder.Entity<PhieuDatLich>()
                 .HasOptional(e => e.ThoiKhoaBieu)
                 .WithRequired(e => e.PhieuDatLich);
+
+            modelBuilder.Entity<VatTu>()
+                .HasMany(e => e.VatTuSuDungs)
+                .WithRequired(e => e.VatTu)
+                .WillCascadeOnDelete(false);
         }
     }
 }

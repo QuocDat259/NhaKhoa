@@ -12,7 +12,7 @@ namespace NhaKhoa.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DichVu()
         {
-            HoaDons = new HashSet<HoaDon>();
+            VatTuSuDungs = new HashSet<VatTuSuDung>();
         }
 
         [Key]
@@ -24,11 +24,9 @@ namespace NhaKhoa.Models
 
         public string Mota { get; set; }
 
-        public int? Id_vattusudung { get; set; }
-
-        public virtual VatTuSuDung VatTuSuDung { get; set; }
+        public int? Id_Vattu { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HoaDon> HoaDons { get; set; }
+        public virtual ICollection<VatTuSuDung> VatTuSuDungs { get; set; }
     }
 }

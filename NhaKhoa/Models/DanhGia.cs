@@ -30,8 +30,6 @@ namespace NhaKhoa.Models
         [StringLength(128)]
         public string Id_Nhasi { get; set; }
 
-        public virtual AspNetUser AspNetUser { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TinTuc> TinTucs { get; set; }
     }
