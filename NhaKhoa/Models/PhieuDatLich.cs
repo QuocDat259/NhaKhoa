@@ -12,6 +12,7 @@ namespace NhaKhoa.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PhieuDatLich()
         {
+            LichKhams = new HashSet<LichKham>();
             PhiKhams = new HashSet<PhiKham>();
         }
 
@@ -33,6 +34,9 @@ namespace NhaKhoa.Models
         public int? Id_kTKB { get; set; }
 
         public virtual AspNetUser AspNetUser { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<LichKham> LichKhams { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PhiKham> PhiKhams { get; set; }
