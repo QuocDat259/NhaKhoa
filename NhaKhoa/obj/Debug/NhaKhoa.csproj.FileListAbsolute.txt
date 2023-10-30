@@ -230,3 +230,7 @@ E:\Web Nha Khoa Chuyen Nganh\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.CoreCompil
 E:\Web Nha Khoa Chuyen Nganh\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.CopyComplete
 E:\Web Nha Khoa Chuyen Nganh\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.dll
 E:\Web Nha Khoa Chuyen Nganh\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.pdb
+D:\DACN\NhaKhoa\bin\BotDetect.dll
+D:\DACN\NhaKhoa\bin\BotDetect.Web.Mvc.dll
+D:\DACN\NhaKhoa\bin\System.Data.SQLite.dll
+D:\DACN\NhaKhoa\bin\System.Data.SQLite.xml
