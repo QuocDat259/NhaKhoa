@@ -388,7 +388,7 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\NhaSi\Views\web.config" />
     <Content Include="Areas\NhanVien\Views\web.config" />
-    <Content Include="Areas\Admin\Views\Shared\Layout_Admin.cshtml" />
+    <Content Include="Areas\LayoutAreas\Layout_Areas.cshtml" />
     <Content Include="Areas\assets\css\soft-ui-dashboard.css.map" />
     <Content Include="Areas\assets\fonts\nucleo-icons.eot" />
     <Content Include="Areas\assets\fonts\nucleo-icons.ttf" />
@@ -631,6 +631,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\NhanVien\Controllers\" />
     <Folder Include="Areas\NhanVien\Data\" />
     <Folder Include="Areas\NhanVien\Views\Shared\" />
