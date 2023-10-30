@@ -1,4 +1,9 @@
 ﻿@model NhaKhoa.Models.RegisterViewModel
+@* sử dụng using và gắn captcha vào form đăng ký  *@
+@using BotDetect.Web.Mvc
+<link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+@{ MvcCaptcha registerCaptcha = new MvcCaptcha("registerCaptcha");
+}
 @{
     ViewBag.Title = "Đăng kí";
 }
@@ -80,6 +85,12 @@
         @Html.LabelFor(m => m.NgayTao, new { @class = "col-md-2 control-label" })
         <div class="col-md-10">
             <input class="form-control text-box single-line" id="NgayTao" name="NgayTao" type="datetime-local" value="" readonly />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.Captcha(registerCaptcha)
+            @Html.TextBox("CaptchaCode")
         </div>
     </div>
     <div class="form-group">
