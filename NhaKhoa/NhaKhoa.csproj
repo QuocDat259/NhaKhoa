@@ -186,6 +186,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\NhanVien\Controllers\NhanVienController.cs" />
     <Compile Include="Areas\NhanVien\NhanVienAreaRegistration.cs" />
     <Compile Include="Areas\NhaSi\Controllers\NhaSiController.cs" />
     <Compile Include="Areas\NhaSi\NhaSiAreaRegistration.cs" />
@@ -388,7 +390,7 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\NhaSi\Views\web.config" />
     <Content Include="Areas\NhanVien\Views\web.config" />
-    <Content Include="Areas\LayoutAreas\Layout_Areas.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\Layout.cshtml" />
     <Content Include="Areas\assets\css\soft-ui-dashboard.css.map" />
     <Content Include="Areas\assets\fonts\nucleo-icons.eot" />
     <Content Include="Areas\assets\fonts\nucleo-icons.ttf" />
@@ -569,6 +571,10 @@
     <Content Include="Areas\assets\scss\soft-ui-dashboard\_utilities.scss" />
     <Content Include="Areas\assets\scss\soft-ui-dashboard\_variables.scss" />
     <Content Include="Areas\NhaSi\Views\NhaSi\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Admin\Index.cshtml" />
+    <Content Include="Areas\NhaSi\Views\Shared\Layout.cshtml" />
+    <Content Include="Areas\NhanVien\Views\Shared\Layout.cshtml" />
+    <Content Include="Areas\NhanVien\Views\NhanVien\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -629,14 +635,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Areas\NhanVien\Controllers\" />
     <Folder Include="Areas\NhanVien\Data\" />
-    <Folder Include="Areas\NhanVien\Views\Shared\" />
     <Folder Include="Areas\NhaSi\Data\" />
-    <Folder Include="Areas\NhaSi\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
